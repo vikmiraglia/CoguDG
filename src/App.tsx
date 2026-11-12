@@ -16,6 +16,7 @@ import {
   getTensionLevel,
   getRoundNumber,
   sanitizePlayers,
+  getCardImageUrl,
 } from './game/rules';
 import { soundEngine } from './game/audio';
 import { AmbientSporeCanvas } from './components/AmbientSporeCanvas';
@@ -136,7 +137,7 @@ export default function App() {
     const upcoming = gameState.deck.slice(0, 3);
     upcoming.forEach((cardId) => {
       const img = new Image();
-      img.src = `/assets/cards/${cardId}.png`;
+      img.src = getCardImageUrl(cardId);
     });
   }, [gameState.status, gameState.deck]);
 

@@ -229,5 +229,9 @@ export function getRoundNumber(drawnCount: number, playerCount: number): number 
  */
 export function getCardImageUrl(cardId: number | null): string {
   const id = cardId && cardId >= 1 && cardId <= 61 ? cardId : BACK_CARD_ID;
-  return `/assets/cards/${id}.png`;
+  const rawBase = (typeof import.meta !== 'undefined' && import.meta.env?.BASE_URL) ? import.meta.env.BASE_URL : '/';
+  const prefix = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
+  return `${prefix}assets/cards/${id}.png`;
 }
+
+

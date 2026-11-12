@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { MAX_PLAYERS, MIN_PLAYERS } from '../game/rules';
+import { MAX_PLAYERS, MIN_PLAYERS, getCardImageUrl } from '../game/rules';
 import { CoguTitleEmblem } from './CoguTitleEmblem';
+
 import { soundEngine } from '../game/audio';
 import { usePWAInstall } from '../hooks/usePWAInstall';
 import { Plus, Trash2, Volume2, VolumeX, ShieldCheck, BookOpen, Download, Sparkles, Mic, MicOff } from 'lucide-react';
@@ -172,7 +173,7 @@ export const TitleSetupScreen: React.FC<TitleSetupScreenProps> = ({
             />
             {/* Secondary fanned card behind */}
             <img
-              src="/assets/cards/1.png"
+              src={getCardImageUrl(1)}
               alt="Prévia de carta COGU"
               referrerPolicy="no-referrer"
               className="absolute inset-0 w-full h-full object-cover rounded-2xl border border-[#2c241b]/40 shadow-xl opacity-80"
@@ -182,7 +183,7 @@ export const TitleSetupScreen: React.FC<TitleSetupScreenProps> = ({
             />
             {/* Primary Original Back Card 61.png */}
             <img
-              src="/assets/cards/61.png"
+              src={getCardImageUrl(61)}
               alt="Verso oficial da carta COGU"
               referrerPolicy="no-referrer"
               className="relative w-full h-full object-cover rounded-2xl border border-[#d4af37]/50 shadow-[0_20px_45px_rgba(0,0,0,0.85)] transition-transform duration-200"
