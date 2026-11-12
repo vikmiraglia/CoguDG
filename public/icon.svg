@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#0d0b0a"/>
+  <rect x="28" y="28" width="456" height="456" rx="88" fill="none" stroke="#d4af37" stroke-width="6" stroke-dasharray="12 8" opacity="0.6"/>
+  <circle cx="256" cy="140" r="36" fill="none" stroke="#d4af37" stroke-width="8"/>
+  <path d="M270 112 A36 36 0 1 0 270 168 A28 28 0 1 1 270 112 Z" fill="#d4af37"/>
+  <!-- Mystical Mushroom Cap -->
+  <path d="M126 300 C126 210 190 185 256 185 C322 185 386 210 386 300 C386 318 360 326 256 326 C152 326 126 318 126 300 Z" fill="#f5efe6" stroke="#d4af37" stroke-width="8"/>
+  <!-- Spots on Cap -->
+  <circle cx="205" cy="245" r="10" fill="#0d0b0a"/>
+  <circle cx="256" cy="222" r="13" fill="#0d0b0a"/>
+  <circle cx="307" cy="245" r="10" fill="#0d0b0a"/>
+  <circle cx="172" cy="282" r="8" fill="#0d0b0a"/>
+  <circle cx="340" cy="282" r="8" fill="#0d0b0a"/>
+  <circle cx="256" cy="276" r="9" fill="#0d0b0a"/>
+  <!-- Mushroom Stem -->
+  <path d="M224 326 C224 365 212 415 224 438 C232 452 280 452 288 438 C300 415 288 365 288 326 Z" fill="#f5efe6" stroke="#d4af37" stroke-width="8"/>
+  <!-- Stars -->
+  <path d="M130 160 L136 176 L152 182 L136 188 L130 204 L124 188 L108 182 L124 176 Z" fill="#d4af37"/>
+  <path d="M382 160 L388 176 L404 182 L388 188 L382 204 L376 188 L360 182 L376 176 Z" fill="#d4af37"/>
+</svg>

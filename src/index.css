@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #0d0b0a;
+    color: #f5efe6;
+  }
+}
+
+@keyframes shakeTension {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  20% { transform: translate3d(-4px, 2px, 0) rotate(-1.5deg); }
+  40% { transform: translate3d(4px, -2px, 0) rotate(1.5deg); }
+  60% { transform: translate3d(-3px, -1px, 0) rotate(-1deg); }
+  80% { transform: translate3d(3px, 2px, 0) rotate(1deg); }
+}
+
+.animate-shake-tension {
+  animation: shakeTension 0.28s ease-in-out infinite;
+}
+

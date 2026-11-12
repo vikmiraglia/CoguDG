@@ -1,0 +1,8 @@
+{
+  "name": "COGU — Just another drinking game",
+  "description": "O drinking game de cartas com comédia, tensão progressiva e desafios entre amigos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
